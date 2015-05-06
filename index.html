@@ -59,9 +59,10 @@
                     	<h4><span class="emphasis">Stock Market Prediction|</span> Research</h4>
                         <p class="fragment">It's a popular subject of research</p>
                         <p class="fragment">Covers a wide range of topics in the area</p>
-                        <p class="fragment">From whether stock market movements can even be predicted</p>
-                        <p class="fragment">To types of models to use - <small>Markov Chains, Neural Networks, Genetic Algorithms etc</small></p>
-                        <p class="fragment">And what to use in the predictions - <small>Market Information, News Information, Social Media (Twitter) etc</small></p>
+                        <hr class="fragment"/>
+                        <p class="fragment">Can stock market movements be predicted</p>
+                        <p class="fragment">Markov Chains, Neural Networks, Genetic Algorithms etc</p>
+                        <p class="fragment">Market Information, News Information, Social Media (Twitter) etc</p>
                     </section>
                     <section>
                     	<h4><span class="emphasis">Stock Market Prediction|</span> Existing Tools</h4>
@@ -96,19 +97,20 @@
 						<h5 class="fragment">Take ideas from research and use them to create a tool</h5>
 						<p class="fragment">The reviewed popular existing tools only use stock market information for predictions</p>
 						<p class="fragment">However research indicates that the news and current events have a large impact</p>
-						<p class="fragment">As such the tool uses news information <b>and</b> market information</p>
+						<p class="fragment">So what will happen if we use news <u><b>and</b></u> market information?</p>
 						<p class="fragment">It was decided that the tool would use the popular neural network model</p>
 					</section>
 					<section>
 						<h4><span class="emphasis">Project Goals|</span> Details</h4>
 						<h5 class="fragment">This tool should be easily usable</h5>
-						<p class="fragment">Decided to develop the tool as a web-based application</p>
+						<p class="fragment">Web-based application</p>
 						<p class="fragment">Consideration about usability taken into account during the design process</p>
 					</section>
 					<section>
 						<h4><span class="emphasis">Project Goals|</span> Details</h4>
 						<h5 class="fragment">It should also allow further research into the area</h5>
 						<p class="fragment">Should provide valuable information</p>
+                        <p class="fragment">Should be easy to reconfigure and extend</p>
 					</section>
 				</section>
                 <section>
@@ -143,6 +145,10 @@
                         <h4><span class="emphasis">System Design|</span> Overview</h4>
                         <img class="stretch" src="img/System%20Overview%20-%207.png"/>
                     </section>
+                    <section>
+                        <h4><span class="emphasis">System Design|</span> Neural Network</h4>
+                        <img class="stretch" src="img/Network%20Layout.png"/>
+                    </section>
                 </section>
                 <section>
                 	<section>
@@ -165,7 +171,7 @@
                         <h4>Issues</h4>
                     </section>
                     <section>
-                        <h4>Issues</h4>
+                        <h4><span class="emphasis">Issues|</span> Overview</h4>
                         <p class="fragment">Unfortunately it was not possible to finish the project on time</p>
                         <p class="fragment">The majority of functionality planned for the project has been delivered</p>
                     </section>
@@ -190,6 +196,12 @@
                         <h5 class="fragment">Underestimation of Time to Learn</h5>
                         <p class="fragment">Too many new technologies used</p>
                         <p class="fragment">Took longer than required to learn technologies and how to fix any issues they presented</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h4>Demonstration</h4>
+                        <a href="http://cherry.elphy.co.uk">Stock Market Prediction Website</a>
                     </section>
                 </section>
                 <section>
@@ -223,8 +235,7 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/remotes/remotes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 
